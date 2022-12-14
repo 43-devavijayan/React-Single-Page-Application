@@ -1,0 +1,6 @@
+@mixin hoverButton {
+    &:hover{
+        color: white;
+        background-color: rgb(108, 39, 149);
+    }
+}

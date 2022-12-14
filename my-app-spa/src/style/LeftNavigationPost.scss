@@ -1,0 +1,62 @@
+@import "Constants";
+@import "HoverButton";
+
+.routing-style {
+  text-decoration: none;
+  color: black;
+  margin: 0px;
+
+  .left-navigation-post-container {
+    display: flex;
+    padding: 5px 20px;
+    padding-left: 40px;
+    justify-content: $SPACEBETWEEN;
+    font-size: 13px;
+    background-color: $COLORWHITE;
+  
+    .left-navigation-post-initial {
+      display: flex;
+
+      .left-navigation-post-image {
+        padding-right: 30px;
+        width: 5%;
+      }
+
+      .left-navigation-post-post {
+        &:hover {
+          cursor: $CURSORPOINTER;
+        }
+      }
+    }
+  }
+}
+
+.nav-link {
+  color: $COLORWHITE;
+  text-decoration: none;
+  margin: 0px;
+
+  .left-navigation-post-container {
+    display: flex;
+    padding: 5px 20px;
+    padding-left: 40px;
+    justify-content: $SPACEBETWEEN;
+    font-size: 13px;
+    background-color: $BACKGROUND-COLOR;
+  }
+
+  .left-navigation-post-initial {
+    display: flex;
+
+    .left-navigation-post-image {
+      padding-right: 30px;
+      width: 5%;
+    }
+
+    .left-navigation-post-post {
+      &:hover {
+        cursor: $CURSORPOINTER;
+      }
+    }
+  }
+}

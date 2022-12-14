@@ -1,0 +1,25 @@
+@import "Constants";
+
+.button-on-click {
+  width: 85%;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: $BORDER-RADIUS;
+  font-size: 13px;
+  padding: 10px;
+  background-color: $COMMON-COLOR;
+  cursor: $CURSORPOINTER;
+
+  &:hover {
+    background-color: $BACKGROUND-COLOR;
+    color: $COLORWHITE;
+  }
+
+  .button-icon {
+    width: 5%;
+    margin: 0px 10px;
+  }
+}
