@@ -1,0 +1,46 @@
+@import "Constants";
+@import "MediaQuery";
+
+.navigation {
+  box-shadow: $BORDER-SHADOW;
+  z-index: 100;
+  width: $FULL-WIDTH;
+  background-color: $COLORWHITE;
+  display: flex;
+  justify-content: $SPACEBETWEEN;
+  align-items: center;
+  border-bottom: $BORDER-STYLE;
+
+  @media screen and(max-width:$sm) {
+    box-shadow: none;
+  }
+
+  .navigation-bar {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 10px 20px;
+
+    .navigation-bar-left-icon {
+      margin: 20px;
+    }
+
+    .navigation-bar-down-icon {
+      margin: 0px 10px;
+    }
+  }
+
+  a {
+    @media screen and (max-width: $sm) {
+      margin-right: 30px;
+    }
+
+    .icon {
+      display: none;
+      @media screen and (max-width: $sm) {
+        float: right;
+        display: block;
+      }
+    }
+  }
+}

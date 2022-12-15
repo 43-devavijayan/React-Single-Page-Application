@@ -1,0 +1,94 @@
+@import "MediaQuery";
+@import "Constants";
+@import "AvatarStyle";
+
+.right-panel-card-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: $SPACEBETWEEN;
+  height: fit-content;
+  background-color: $COLORWHITE;
+  width: 60%;
+  border-radius: 16px;
+  flex-direction: column;
+  padding: 10px;
+
+  @media screen and (max-width: $xxl) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $xl) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $lg) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $md) {
+    width: 75%;
+  }
+
+  @media screen and(max-width:$sm) {
+    width: 85%;
+  }
+
+  .right-panel-card-user {
+    font-size: 12px;
+    display: flex;
+    justify-content: $SPACEBETWEEN;
+    margin-bottom: 10px;
+
+    .right-panel-card-user-image {
+      display: flex;
+
+      .user-image {
+        @include avatarStyle;
+      }
+
+      .right-panel-card-user-info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+
+        p {
+          margin: 0px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .right-panel-card-edit {
+    display: flex;
+    justify-content: $SPACEBETWEEN;
+    font-size: 12px;
+    align-items: center;
+
+    .right-panel-card-content {
+      width: 90%;
+      word-break: break-word;
+    }
+
+    .update-form-field {
+      width: 93%;
+
+      .update-input-field {
+        background-color: rgb(244, 237, 237);
+        border: 0px;
+        border-radius: 16px;
+        margin: 7px;
+        width: 100%;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.edit-icon {
+  cursor: $CURSORPOINTER;
+}

@@ -1,0 +1,13 @@
+@import '../src/style/_MediaQuery.scss';
+
+.App {
+  text-align: center;
+}
+.panel{
+  display: flex; 
+}
+@media screen and (max-width:$sm) {
+  .panel{
+    flex-direction:column;
+  }
+}

@@ -1,0 +1,27 @@
+@import "MediaQuery";
+@import "Constants";
+
+.overall-container {
+  display: flex;
+  height: $HEIGHTCALCULATION;
+  width: 100%;
+
+  .right-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(239, 232, 232, 0.712);
+    height: $HEIGHTCALCULATION;
+    width: 100%;
+    border-color: $COLORWHITE;
+    overflow-y: auto;
+    align-items: center;
+
+    @media screen and (max-width: $md) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: $sm) {
+      width: 100%;
+    }
+  }
+}

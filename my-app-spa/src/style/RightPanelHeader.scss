@@ -1,0 +1,92 @@
+@import "MediaQuery";
+@import "Constants";
+@import "../style/AvatarStyle";
+
+.right-panel-header {
+  display: flex;
+  padding: 5px 10px;
+  background-color: $COLORWHITE;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: $SPACEBETWEEN;
+  margin-top: 20px;
+  border-radius: 16px;
+  width: 60%;
+
+  @media screen and (max-width: $xxl) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $xl) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $lg) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $md) {
+    width: 75%;
+  }
+
+  @media screen and(max-width:$sm) {
+    width: 85%;
+  }
+
+  .right-panel-user-input {
+    display: flex;
+    padding-left: 5px;
+    padding-top: 10px;
+    align-items: center;
+
+    .user-image {
+      @include avatarStyle;
+    }
+
+    .right-panel-input {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(244, 237, 237);
+      border: 0px;
+      border-radius: 16px;
+      margin: 7px;
+      width: 96%;
+      resize: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .right-panel-attachments {
+    display: flex;
+    padding: 2px 10px 2px 60px;
+    justify-content: $SPACEBETWEEN;
+
+    @media screen and (max-width: $md) {
+      padding: 0px;
+    }
+
+    @media screen and(max-width:$sm) {
+      padding: 2px 5px 0px 39px;
+    }
+
+    .right-panel-attachment-file {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+
+      @media screen and(max-width:$sm) {
+        font-size: 12px;
+      }
+
+      .right-panel-attachemnt-icon {
+        padding-right: 5px;
+        font-size: 12px;
+
+        @media screen and(max-width:$sm) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "constants";
+
+@mixin deleteStyle {
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: $CURSORPOINTER;
+}

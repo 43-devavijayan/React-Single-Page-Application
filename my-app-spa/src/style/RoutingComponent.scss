@@ -1,0 +1,12 @@
+.routing-component {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(239, 232, 232, 0.712);
+
+  .routing-component-link {
+    display: flex;
+    font-size: 15px;
+  }
+}

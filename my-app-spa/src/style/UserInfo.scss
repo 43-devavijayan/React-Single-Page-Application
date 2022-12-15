@@ -1,0 +1,10 @@
+@import "AvatarStyle";
+
+.user-info-image {
+  display: flex;
+  padding: 15px 25px;
+
+  .user-image {
+    @include avatarStyle;
+  }
+}

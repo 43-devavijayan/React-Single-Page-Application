@@ -1,0 +1,48 @@
+@import "MediaQuery";
+@import "Constants";
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: $COLORWHITE;
+  height: $HEIGHTCALCULATION;
+  width: 25%;
+  overflow-y: auto;
+
+  @media screen and (max-width: $xxl) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: $xl) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: $lg) {
+    width: 40%;
+  }
+
+  @media screen and (max-width: $md) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: $sm) {
+    display: none;
+  }
+
+  p {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .left-panel.responsive {
+    position: fixed;
+    display: block;
+    float: right;
+    right: 0;
+    overflow-y: auto;
+    height: $HEIGHTCALCULATION;
+    width: 60%;
+  }
+}
